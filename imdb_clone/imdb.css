@@ -1,0 +1,187 @@
+body
+{
+    background-color: black;
+}
+a
+{
+    text-decoration: none;
+}
+.navbar
+{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    background-color: rgb(23, 20, 20);
+    width: auto;
+    height: 50px;
+}
+
+#logo
+{
+    width: 59px;
+    height: 27px;
+    margin-right: 15px;
+}
+.dropdown
+{
+    display: flex;
+}
+.dropdown select
+{
+    font-weight: bolder;
+    font-size: 15px;
+    margin-left: 15px;
+    width: 60px;
+    height: 33px;
+}
+#search input
+{
+    width: 500px;
+    height: 28px;
+}
+#searchbtt button
+{
+    width: 40px;
+    height: 20px
+}
+.search-results
+{
+    background-color: white;
+}
+.menu
+{
+    color: white;
+    margin-left: 5px;
+}
+#prologo
+{
+
+    width: 90px;
+    height: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#watch
+{
+    color: white;
+    margin-left: 15px;
+    margin-top: 3px;
+}
+.watchlist
+{
+    display: flex;
+    align-items: center;
+    /* border-left: 3px solid lightslategrey; */
+}
+.watchlist a
+{
+    text-decoration: none;
+}
+.watchlist #bar 
+{
+    border-left: 3px solid lightslategrey;
+    border-radius: 2px;
+}
+#watchlist_text
+{
+    color: white;
+    font-size: large
+}
+.sign
+{
+    margin-top: 4px;
+    margin-left: 20px;
+}
+.sign a
+{
+    color: white;
+    font-size: large;
+}
+.movies
+{
+    margin-left: 100px;
+    margin-top: 100px;
+}
+#what
+{
+    color: yellow;
+}
+.picks
+{
+
+    display: flex;
+    color: white;
+    font-size: larger;
+    border-left: 3px solid lightslategrey;
+    padding-left: 10px;
+}
+.belowtop
+{
+    font-size: larger;
+    margin-top: 20px;
+    color: lightgray;
+}
+#star
+{
+    margin-top: 15px;
+    margin-left: 170px;
+    margin-right: 10px;
+    color: yellow;
+}
+/* .gray
+{
+    background-color: rgb(38, 46, 53);
+} */
+.tile1
+{
+    width: 300px;
+    transition: 1s ease;
+
+}
+.tile1:hover
+{
+   -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+.tile1 img
+{
+    width: 200px;
+    height: 300px;
+    margin-top: 90px;
+    margin-left: 150px;
+}
+.tile1_desc
+{
+    display: flex;
+    font-size: large;
+}
+.tile1_name
+{
+    margin-left: 170px;
+    margin-top: -20px;
+    font-size: larger;
+}
+#play
+{
+    color: white;
+    margin-left: 160px;
+}
+.tile1_trailer
+{
+    display: flex;
+}
+.tile1_trailer_text
+{
+    display: flex;
+    font-size: larger;
+    margin-left: 10px;
+    margin-top: -17px;
+}
+#info
+{
+    margin-top: 17px;
+    margin-left: 70px;
+    color: white;
+}

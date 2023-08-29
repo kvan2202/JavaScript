@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="imdb.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+<body> 
+    <div class="navbar">
+        <a href="index.html"><img src="images/imdb-logo.png" alt="" id="logo"></a>
+        <a href="#">
+            <span class="material-symbols-outlined" style="color:white;">
+                menu
+            </span>
+         </a>
+
+         <span class="menu" style="font-size: larger;">Menu</span>
+        <div class="insidenavbar">
+            <div class="dropdown">
+                <select name="Category" id="">
+                    <option value="">All</option>
+                    <option value="">Tv Episodes</option>
+                    <option value="">Companies</option>
+                    <option value="">Celebs</option>
+                    <option value="">Keywords</option>
+                </select>
+                <div id="search">
+                    <input id='searchs' oninput='searchnow()'type="text" placeholder="Search IMDb">
+                </div>
+                <div class="searchbtt">
+                    <button>
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </button>
+                </div>
+                <div class="pro">
+                    <a href="#"><img src="images/pro.png" alt="" id="prologo"></a>
+                </div>
+                <div class="watchlist">
+                    <a href="" id="bar">
+                        <span class="material-symbols-outlined" id="watch">
+                            bookmark
+                        </span>
+                    </a>
+                    <a href="#">
+                    <span id="watchlist_text">WatchList</span>
+                    </a>
+                </div>
+                <div class="sign">
+                    <a href="">Sign In</a>
+                </div>
+            </div>
+        </div>
+        <div id="search-results"></div>
+    </div>
+    <div class="movies">
+        <h1 id="what">What to watch</h1>
+        <a href="#">
+            <div class="picks">
+                Top picks
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                </span>
+            </div>
+        </a>
+        <div class="belowtop">
+            TV shows and movies just for you
+        </div>
+    </div>
+    <div class="movie_tiles">
+        <a href="#">
+            <div class="tile1">
+                <img src="images/ironman.jpg" alt="">
+                <div class="gray">
+                    <div class="tile1_desc">
+                        <span class="material-symbols-outlined" id="star">
+                            grade 
+                        </span>
+                        <p style="color:white">9.7</p>
+                    </div>
+                    <div class="tile1_name">
+                        <p style="color: white;">Iron Man</p>
+                    </div>
+                    <div class="tile1_trailer" id="play">
+                        <span class="material-symbols-outlined">
+                            play_arrow
+                        </span>
+                    <div class="tile1_trailer_text">
+                        <p style="color:white">Trailer </p>
+                        <span class="material-symbols-outlined" id="info">
+                            info
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        </div>
+    </div>
+    <script src="imdb.js"></script>
+    <!-- <script>
+        const movieTitle=document.getElementById("movieTitle");
+
+        fetch("https://www.omdbapi.com/?apikey=2f943646&t=cars")
+        .then(response => response.json())
+        .then(responseJSON => {
+            const movie= document.createElement("img");
+            const moviet= document.createElement("p");
+            movie.src=responseJSON.Poster;
+            moviet.innerText=responseJSON.Title;
+            movieTitle.append(movie);
+            movieTitle.append(moviet);
+        })
+    </script> -->
+</body>
+</html>

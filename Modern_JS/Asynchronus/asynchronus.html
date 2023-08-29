@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //---------------------------------CALL-BACKS-------------------------------------
+     /*   function myDisplay(message)
+        {
+            console.log(message);
+        }
+        function myFirst()
+        {
+            myDisplay("inside my First function");
+        }
+        function mySecond()
+        {
+            myDisplay("inside my Second function");
+        }
+        myFirst();
+        mySecond();*/
+        /* function myDisplay(message) {
+             console.log(message)
+         }
+         function myDisplay1(message) {
+             console.log("myDisplay1 " + message)
+         }
+         function myDisplay2(message) {
+             console.log("myDisplay2" + message)
+         }
+         function myCalculator(num1, num2) {
+             let sum = num1 + num2;
+             myDisplay1(sum)
+         }
+         myCalculator(1, 2);
+         myCalculator(3, 4);*/
+         
+        /* function myDisplay(message) {
+             console.log(message)
+         }
+         function myDisplay1(message) {
+             console.log("myDisplay1 " + message)
+         }
+         function myDisplay2(message) {
+             console.log("myDisplay2 " + message)
+         }
+         function myCalculator(num1, num2, kevin) {
+             let sum = num1 + num2;
+             kevin(sum)
+         }
+         myCalculator(1, 2, myDisplay); 
+         myCalculator(3, 4, myDisplay1); 
+         myCalculator(5, 6, myDisplay2);*/
+
+
+         //--------------------------------------PROMISE---------------------------------------
+
+         /*let myPromise = new Promise(function(resolve,reject){
+            //do something 
+         })*/
+         //The Promise() constructor takes a function as an argument, that function will also accept 
+         //2 more function resolve() and reject()
+
+         const count = false;
+
+         let countValue = new Promise(function(resolve,reject){
+            if(count)
+                resolve("There is a count value. ");
+            else 
+                reject("There is no count value ");
+         });
+         console.error(countValue);
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [7,8,9];
+        /*const nikita = arr[0];
+        const isha = arr[1];
+        const kevin = arr[2];*/
+
+        //------------------------DESTRUCTURING ARRAY------------------------
+        
+        const [nikita,isha,kevin,manav]=arr;  
+
+        console.log(nikita,isha,kevin,);
+
+        //------------------------DESTRUCTURING OBJECT-----------------------
+        const obj = {brand:"volkswagen", model:"virtus", mileage: 15};
+        console.log(obj.brand,obj.model,obj.mileage);
+
+        const {brand,model,mileage}=obj;
+        console.log(brand,model,mileage);
+
+    const getCalculation=(a,b)=>{
+        return {
+            sum:a+b,
+            mul:a*b,
+            div:a/b,
+            mod:a%b
+        }
+    }
+    const {sum,div}=getCalculation(5,10);
+    //const {sum,mul}={sum:15,mul:50,div:0.5,mod:0}
+    console.log(sum,div);
+    
+    
+    </script>
+</body>
+</html>
